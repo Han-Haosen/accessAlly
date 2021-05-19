@@ -59,6 +59,18 @@ for i in range(1,8,2):
             intdonor[1] -= 1
             patientcount += 1
             continue
+        if i == 3:
+            if intdonor[2] > 0:
+                intreceiver[i] -= 1
+                intdonor[2] -= 1
+                patientcount += 1
+                continue
+        if i == 5:
+            if intdonor[4] > 0:
+                intreceiver[i] -= 1
+                intdonor[4] -= 1
+                patientcount += 1
+                continue
         if i == 7:
             for j in range(8):
                 if(intdonor[j] > 0):
